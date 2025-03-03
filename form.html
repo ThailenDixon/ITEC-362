@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Valorant</title>
+</head>
+<body>
+    <header>
+        <img src="valorant-logo.png" alt="Valorant Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="agents.html">Agents</a></li>
+                <li><a href="form.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Feedback Form</h1>
+            <p>We value your feedback! Please share your thoughts about Valorant.</p>
+        </section>
+        
+        <section>
+            <form>
+                <div>
+                    <label for="feedback">Please share your thoughts:</label>
+                    <input type="text" id="feedback" name="feedback" required>
+                </div>
+                <div>
+                    <label for="name">Name (Optional):</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Email (Optional):</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label>Are you interested in playing Valorant?</label>
+                    <input type="radio" id="yes" name="interest" value="yes"> <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="interest" value="no"> <label for="no">No</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>About | Contact | Privacy Policy | Social Media</p>
+    </footer>
+</body>
+</html>
