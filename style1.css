@@ -1,0 +1,118 @@
+/* Global Styles */
+body {
+    background-color: #0f1923; /* Dark background for Valorant theme */
+    color: #ffffff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: flex-start; /* Align header items to the left */
+    align-items: center;
+    background-color: #ff4655; /* Valorant red */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1000;
+    padding-left: 30px; /* Move header content to the left */
+    padding-right: 30px; /* Adjust padding on the right */
+    box-sizing: border-box; /* Ensure padding doesn’t cause overflow */
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff4655;
+    margin-right: 20px;
+    display: block; /* Ensure it’s not hidden */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 80px 20px 20px; /* Padding to prevent overlap with fixed header */
+    text-align: center;
+}
+
+/* Agent Cards Section */
+.agent-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.agent-card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    background-color: #1f2937; /* Slightly dark background for card */
+}
+
+.agent-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Agent Images */
+.agent-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure the image fills the space properly */
+    border: 3px solid #ff4655; /* Valorant red border */
+}
+
+/* Agent Name and Description */
+.agent-card strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff4655; /* Valorant red */
+}
+
+.agent-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #ff4655;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+}
